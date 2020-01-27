@@ -6,99 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
     <title>Blog de Viajes</title>
 </head>
 
 <body>
     <header>
-        <img src="./Assets/logo/logo_01.svg" alt="logo">
-        <nav class="menu">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">TENDENCIAS</a></li>
-                <li><a href="#">BLOG</a></li>
-            </ul>
+        <nav class='navbar navbar-expand-lg navbar-light fixed-top bg-light px-5'>
+            <a class="navbar-brand" href="index.html">
+                <img src="./Assets/logo/logo_01.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" data-target='#menu' data-toggle='collapse'>
+                <span class='navbar-toggler-icon'>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id='menu'>
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item active"><a href="index.html" class='nav-link'>HOME</a></li>
+                    <li class="nav-item"><a href="#tendencias" class='nav-link'>TENDENCIAS</a></li>
+                    <li class="nav-item"><a href="#blog" class='nav-link'>BLOG</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <article>
-            <div class="articleHead">
-                <h1>AMERICA DEL SUR</h1>
-                <hr>
-                <h5>Lugares maravillosos por America del Sur</h5>
-                <p>Estos son algunos lugares que elijen la mayoría de los turistas que visitan América del Sur.</p>
+        <div class='carousel slide crsl' data-ride='carousel' id='carousel' data-interval='3000'>
+            <ol class="carousel-indicators mb-5">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Assets/img/Viajes_Hero.jpg" alt="Viajes_Hero">
+                    <div class="header-text ml-5">
+                        <h1>
+                            AMERICA DEL SUR
+                        </h1>
+                        <hr>
+                        <h5>
+                            Lugares maravillosos por America del Sur
+                        </h5>
+                        <p>Estos son algunos lugares que elijen la mayoría de los turistas que visitan América del Sur.</p>
+                    </div>
+                    <div class="articleNext p-3 mr-5">
+                        <p>PRÓXIMA AVENTURA
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span class="arrow-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </p>
+                        <p>Europa Meridional</p>
+                        <p>Forman parte veinte paises, ej. España, Francia, etc.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=768&w=1366" alt="Viajes_Hero">
+                    <div class="header-text ml-5">
+                        <h1>
+                            EUROPA MERIDIONAL
+                        </h1>
+                        <hr>
+                        <h5>
+                            Lugares maravillosos por Europa Meridional
+                        </h5>
+                        <p>Estos son algunos lugares que elijen la mayoría de los turistas que visitan Europa Meridional.</p>
+                    </div>
+                    <div class="articleNext p-3 mr-5">
+                        <p>PRÓXIMA AVENTURA
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span class="arrow-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </p>
+                        <p>América del sur</p>
+                        <p>Forman parte doce paises, ej. Argentina, Uruguay, Brasil, etc.</p>
+                    </div>
+                </div>
             </div>
-            <div class="articleNext">
-                <p><strong>PRÓXIMA AVENTURA</strong><img src="" alt=""></p>
-                <p><strong>Europa Meridional</strong></p>
-                <p>Forman parte veinte países, ej. España, Francia, etc.</p>
-            </div>
-            <div class="slider">
+        </div>
+        <article class='tend m-5'>
+            <h5 class='font-weight-bold' id='tendencias'>TENDENCIAS</h5>
+            <div class="my-4 row justify-content-center">
+                <div class="tendThumbnails nuevo col-3">
+                    <img src="./Assets/img/card_01.png " alt="Montañas y magia">
+                    <div class="texto">
+                        <p>Montañas y magia</p>
+                        <p>Aquí la descripción para Montañas y magia</p>
+                    </div>
+                </div>
+                <div class="tendThumbnails col-3 mx-5">
+                    <img src="./Assets/img/card_02.png " alt="Playas y sol">
+                    <div class="texto">
+                        <p>Playas y sol</p>
+                        <p>La descripción de Playas y sol debe ser esta</p>
+                    </div>
+                </div>
+                <div class="tendThumbnails col-3">
+                    <img src="./Assets/img/card_03.png " alt="Nieve y aventura">
+                    <div class="texto">
+                        <p>Nieve y aventura</p>
+                        <p>Contiene la información de Nieve y aventura</p>
+                    </div>
+                </div>
             </div>
         </article>
-        <article>
-            <h3>TENDENCIAS</h3>
-            <div class="tendThumbnails nuevo">
-                <img src="./Assets/img/card_01.png" alt="Montañas y magia">
-                <h6>Montañas y magia</h6>
-                <p>Aquí la descripción para <strong>Montañas y magia</strong></p>
-            </div>
-            <div class="tendThumbnails">
-                <img src="./Assets/img/card_02.png" alt="Playas y sol">
-                <h6>Playas y sol</h6>
-                <p>La descripción de <strong>Playas y sol</strong> debe ser esta</p>
-            </div>
-            <div class="tendThumbnails">
-                <img src="./Assets/img/card_03.png" alt="Nieve y aventura">
-                <h6>Nieve y aventura</h6>
-                <p>Contiene la información de <strong>Nieve y aventura</strong></p>
-            </div>
-        </article>
-        <article>
-            <h3>BLOG</h3>
-            <div class="bigBlogEntries">
-                <div class="blogEntry">
-                    <h6>CIUDAD</h6>
-                    <h5>Artículo de puente</h5>
-                    <p>Un puente es una construcción que permite salvar un accidente geográfico</p>
-                    <p>Hace 2m</p>
+        <article class='blog m-5'>
+            <h5 class='font-weight-bold' id='blog'>BLOG</h5>
+            <div class="row py-5">
+                <div class="bigBlogEntries col-md-12 col-lg-8">
+                    <div class="newEntry mb-3">
+                        <img src="./Assets/img/articulo_big_01.png" alt="puente">
+                        <h6>CIUDAD</h6>
+                        <div class="info">
+                            <h5>Artículo de puente</h5>
+                            <p>Un puente es una construcción que permite salvar un accidente geográfico</p>
+                        </div>
+                        <p>Hace 2m</p>
+                    </div>
+                    <div class="newEntry">
+                        <img src="./Assets/img/articulo_big_02.png " alt="bosque">
+                        <h6>AVENTURA</h6>
+                        <div class="info">
+                            <h5>Artículo de bosque</h5>
+                            <p>Lugar poblado de árboles y arbustos. Área con una importante densidad de árboles.</p>
+                        </div>
+                        <p>Hace 15m</p>
+                    </div>
                 </div>
-                <div class="blogEntry">
-                    <h6>AVENTURA</h6>
-                    <h5>Artículo de bosque</h5>
-                    <p>Lugar poblado de árboles y arbustos. Área con una importante densidad de árboles.</p>
-                    <p>Hace 15m</p>
-                </div>
-            </div>
-            <div class="litBlogEntries">
-                <div class="blogEntry old">
-                    <h6>NATURALEZA</h6>
-                    <h5>Articulo de elefante</h5>
-                    <p>Mamífero paquidermo de gran tamaño, el mayor de los terrestres, con la piel de color gris oscuro, gruesa, rugosa y sin pelo</p>
-                    <p>Hace 3h</p>
-                </div>
-                <div class="blogEntry old">
-                    <h6>NATURALEZA</h6>
-                    <h5>Articulo de loro</h5>
-                    <p>Ave trepadora de 30 a 40 cm de longitud, con el plumaje de colores muy vistosos y variados, y el pico fuerte, grueso y curvo</p>
-                    <p>Hace 4h</p>
-                </div>
-                <div class="blogEntry old">
-                    <h6>RECORRIDOS</h6>
-                    <h5>Articulo de camino</h5>
-                    <p>Franja de terreno utilizada o dispuesta para caminar o ir de un lugar a otro; en especial la que no está asfaltada.</p>
-                    <p>Hace 8h</p>
+                <div class="bitBlogEntries col-lg-4 ">
+                    <div class="oldEntry">
+                        <img src="./Assets/img/articulo_small_01.png " alt="elefante">
+                        <h6>Articulo de elefante</h6>
+                        <p>Hace 3h</p>
+                    </div>
+                    <div class="oldEntry ">
+                        <img src="./Assets/img/articulo_small_02.png " alt="loro">
+                        <h6>Articulo de loro</h6>
+                        <p>Hace 4h</p>
+                    </div>
+                    <div class="oldEntry ">
+                        <img src="./Assets/img/articulo_small_03.png " alt="camino">
+                        <h6>Articulo de camino</h6>
+                        <p>Hace 8h</p>
+                    </div>
                 </div>
             </div>
         </article>
     </main>
     <footer>
-        <img src="./Assets/logo/logo_02.svg" alt="logo">
-        <div>
-            <img src="./Assets/iconos/instagram.svg" alt="instagram">
-            <img src="./Assets/iconos/facebook.svg" alt="facebook">
-        </div>
+        <nav class='navbar navbar-dark bg-dark px-5'>
+            <a class="navbar-brand " href="index.html ">
+                <img src="./Assets/logo/logo_02.svg " alt="logo ">
+            </a>
+            <div>
+                <a href="index.html ">
+                    <img src="./Assets/iconos/instagram.svg " alt="instagram">
+                </a>
+                <a href="index.html ">
+                    <img src="./Assets/iconos/facebook.svg " alt="facebook">
+                </a>
+            </div>
+        </nav>
     </footer>
 </body>
 

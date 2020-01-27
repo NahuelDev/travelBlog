@@ -1,150 +1,310 @@
-/*reset css */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 62.5%;
+html {
     font-family: 'Montserrat', sans-serif;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+    scroll-behavior: smooth;
 }
 
 body {
-    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 
-ol,
-ul {
-    list-style: none;
+div.crsl img {
+    width: 100vw;
+    height: 70vh;
 }
 
+.crsl .carousel-indicators {
+    justify-content: flex-start;
+    align-self: flex-end;
+    margin: 0;
+}
 
-/* header */
-
-header {
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    height: 14em;
-    padding: .5em 25em;
+.bg-light {
     box-shadow: 0px 3px 6px #00000029;
 }
 
-header img {
-    margin: auto 0;
+
+/*
+.carousel-indicators .active {
+    background-color: #2980b9;
 }
 
-nav.menu,
-.menu ul li {
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-image: none;
+    background-repeat: no-repeat;
+    text-shadow: none;
+}
+
+.carousel-control.left span {
+    padding: 15px;
+}
+
+.carousel-control.right span {
+    padding: 15px;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
     display: inline-block;
-    font-size: 2.4rem;
-    margin-right: 1em;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    left: 0;
 }
 
-nav.menu {
-    margin: auto 0;
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    right: 0;
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+    background-color: #000;
+}
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+*/
+
+
+/* Carousel Header Styles */
+
+.header-text {
+    position: absolute;
+    top: 35%;
+    right: auto;
+    width: 45%;
+    color: #fff;
+}
+
+.header-text h1,
+.header-text h5 {
+    font-weight: bold;
+}
+
+.header-text h1::before {
+    background-image: url(../Assets/iconos/ic_pin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: ' ';
+    padding-left: 2rem;
+}
+
+.header-text hr {
+    border: 1px solid #fff;
+}
+
+.articleNext {
+    position: absolute;
+    background: rgb(42, 48, 55, .5);
+    border: 2px dashed rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    bottom: 15%;
+    left: 70%;
+    width: 22%;
+}
+
+.articleNext p {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.articleNext p:first-child {
+    color: #FA6980;
+}
+
+.articleNext .carousel-control-next {
+    height: 3.4em;
+    right: 50px;
+}
+
+.articleNext .arrow-icon {
+    background-image: url(../Assets/iconos/arrow.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    content: ' ';
+    margin-right: -275%;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.articleNext p:last-child {
+    font-weight: lighter;
+}
+
+main {
+    background-image: linear-gradient( #ebebeb, #ebebeb 60%, #fff 60%);
+    margin-top: 56px;
+}
+
+.tendThumbnails {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    background-color: #FFF;
+    padding: 0;
+}
+
+.tendThumbnails>img {
+    height: 70%;
+}
+
+.tendThumbnails .texto {
+    color: #2A3037;
+    padding: 1rem;
+    font-size: 13px;
+}
+
+.tendThumbnails .texto p:first-child {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.tendThumbnails .texto p:last-child {
+    font-size: 10px;
+    padding-bottom: 3rem;
+}
+
+article.tend h5.font-weight-bold {
+    color: #2A3037
+}
+
+.nuevo .new {
+    background: #FA6980;
+    border-radius: 6px;
+    color: #fff;
+    width: min-content;
+    font-weight: bold;
+    font-size: 11px;
+    padding: .2rem;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 67%;
+    left: 10%;
+}
+
+div.row img {
+    width: 100%;
+}
+
+.bigBlogEntries .newEntry {
+    position: relative;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.newEntry h6 {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    font-weight: bold;
+}
+
+.newEntry .info {
+    position: absolute;
+    left: 3%;
+    bottom: 25%;
+}
+
+.info h5 {
+    font-weight: bold;
+}
+
+.newEntry>p {
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+    color: #CBD0D3;
+}
+
+.newEntry>p::before {
+    background-image: url(../Assets/iconos/time.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: ' ';
+    padding-left: 1.5rem;
+}
+
+.oldEntry {
+    margin-bottom: 2rem;
+}
+
+.oldEntry:hover {
+    outline: 1px solid black;
+}
+
+.oldEntry h6 {
+    font-weight: bold;
+    /*padding-bottom: 1rem;*/
+}
+
+.oldEntry p {
+    font-size: 13px;
+    color: #CBD0D3;
+}
+
+.oldEntry p::before {
+    background-image: url(../Assets/iconos/time.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: ' ';
+    padding-left: 1.5rem;
+}
+
+@media only screen and (max-width:991px) {
+    .header-text {
+        width: 50%;
+    }
+    .header-text h1 {
+        font-size: 25px;
+    }
+    .header-text h5 {
+        font-size: 20px;
+    }
+    .header-text h1::before {
+        background-size: 15px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header-text {
+        width: 65%;
+    }
+    .tendThumbnails .texto p:first-child {
+        font-size: 24px;
+    }
+    .tendThumbnails .texto p:last-child {
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .tendThumbnails .texto p:first-child {
+        font-size: 16px;
+    }
+    .tendThumbnails .texto p:last-child {
+        font-size: 13px;
+    }
 }
