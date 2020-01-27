@@ -1,32 +1,28 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif
 }
-
-
-/* header nav style*/
 
 .bg-light {
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0 3px 6px #00000029
 }
-
-
-/* Carousel Header Styles */
 
 .header-text {
     position: absolute;
     top: 35%;
     right: auto;
     width: 45%;
-    color: #fff;
+    color: #fff
 }
 
+.articleNext p,
 .header-text h1,
-.header-text h5 {
-    font-weight: bold;
+.header-text h5,
+.info h5 {
+    font-weight: 700
 }
 
 .header-text h1::before {
@@ -34,22 +30,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     content: ' ';
-    padding-left: 2rem;
+    padding-left: 2rem
 }
 
 .header-text hr {
-    border: 1px solid #fff;
+    border: 1px solid #fff
 }
 
 div.crsl img {
     width: 100vw;
-    height: 70vh;
+    height: 70vh
 }
 
 .crsl .carousel-indicators {
     justify-content: flex-start;
     align-self: flex-end;
-    margin: 0;
+    margin: 0
 }
 
 .articleNext {
@@ -59,22 +55,21 @@ div.crsl img {
     border-radius: 6px;
     bottom: 15%;
     left: 70%;
-    width: 22%;
+    width: 22%
 }
 
 .articleNext p {
     color: #fff;
-    font-weight: bold;
-    margin-bottom: 1px;
+    margin-bottom: 1px
 }
 
 .articleNext p:first-child {
-    color: #FA6980;
+    color: #fa6980
 }
 
 .articleNext .carousel-control-next {
     height: 3.4em;
-    right: 50px;
+    right: 50px
 }
 
 .articleNext .arrow-icon {
@@ -84,177 +79,162 @@ div.crsl img {
     content: ' ';
     margin-right: -275%;
     padding-left: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1em
 }
 
 .articleNext p:last-child {
-    font-weight: lighter;
+    font-weight: lighter
 }
 
-
-/*main styles*/
-
 main {
-    background-image: linear-gradient( #ebebeb, #ebebeb 60%, #fff 60%);
-    margin-top: 56px;
+    background-image: linear-gradient(#ebebeb, #ebebeb 60%, #fff 60%);
+    margin-top: 56px
 }
 
 .tendThumbnails {
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0 3px 6px #00000029;
     border-radius: 6px;
-    background-color: #FFF;
-    padding: 0;
+    background-color: #fff;
+    padding: 0
 }
 
 .tendThumbnails>img {
-    height: 70%;
+    height: 70%
 }
 
 .tendThumbnails .texto {
-    color: #2A3037;
+    color: #2a3037;
     padding: 1rem;
-    font-size: 13px;
+    font-size: 13px
 }
 
 .tendThumbnails .texto p:first-child {
-    font-weight: bold;
-    margin-bottom: 3px;
+    font-weight: 700;
+    margin-bottom: 3px
 }
 
 .tendThumbnails .texto p:last-child {
     font-size: 10px;
-    padding-bottom: 3rem;
+    padding-bottom: 3rem
 }
 
 article.tend h5.font-weight-bold {
-    color: #2A3037
+    color: #2a3037
+}
+
+article.tend {
+    padding: 0
 }
 
 .nuevo .new {
-    background: #FA6980;
+    background: #fa6980;
     border-radius: 6px;
     color: #fff;
     width: min-content;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 11px;
     padding: .2rem;
     text-align: center;
     margin: 0;
     position: absolute;
     top: 67%;
-    left: 10%;
+    left: 10%
 }
 
 div.row img {
-    width: 100%;
+    width: 100%
 }
 
 .bigBlogEntries .newEntry {
     position: relative;
     color: #fff;
-    border-radius: 6px;
+    border-radius: 6px
 }
 
 .newEntry h6 {
     position: absolute;
     top: 5%;
-    left: 3%;
-    font-weight: bold;
+    left: 3%
 }
 
-.newEntry .info {
-    position: absolute;
-    left: 3%;
-    bottom: 25%;
-}
-
-.info h5 {
-    font-weight: bold;
-}
-
+.newEntry .info,
 .newEntry>p {
     position: absolute;
     left: 3%;
+    bottom: 25%
+}
+
+.newEntry>p {
     bottom: 3%;
-    color: #CBD0D3;
+    color: #cbd0d3
 }
 
-.newEntry>p::before {
-    background-image: url(../Assets/iconos/time.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    content: ' ';
-    padding-left: 1.5rem;
-}
-
-.oldEntry {
-    margin-bottom: 2rem;
-}
-
-.oldEntry:hover {
-    outline: 1px solid black;
-}
-
-.oldEntry h6 {
-    font-weight: bold;
-    /*padding-bottom: 1rem;*/
-}
-
-.oldEntry p {
-    font-size: 13px;
-    color: #CBD0D3;
-}
-
+.newEntry>p::before,
 .oldEntry p::before {
     background-image: url(../Assets/iconos/time.svg);
     background-position: center;
     background-repeat: no-repeat;
     content: ' ';
-    padding-left: 1.5rem;
+    padding-left: 1.5rem
 }
 
+.oldEntry {
+    margin-bottom: 2rem
+}
 
-/* mediaqueries */
+.oldEntry:hover {
+    outline: 1px solid #000
+}
+
+.newEntry h6,
+.oldEntry h6 {
+    font-weight: 700
+}
+
+.oldEntry p {
+    font-size: 13px;
+    color: #cbd0d3
+}
 
 @media only screen and (max-width:991px) {
     .header-text {
-        width: 50%;
+        width: 50%
     }
     .newEntry img {
-        height: 70vh;
+        height: 70vh
     }
     .header-text h1 {
-        font-size: 25px;
+        font-size: 25px
     }
     .header-text h5 {
-        font-size: 20px;
+        font-size: 20px
     }
     .header-text h1::before {
-        background-size: 15px;
+        background-size: 15px
     }
     .bigBlogEntries {
-        padding: 0;
+        padding: 0
     }
 }
 
 @media only screen and (max-width:768px) {
     .header-text {
-        width: 65%;
+        width: 65%
     }
     .tendThumbnails .texto p:first-child {
-        font-size: 24px;
+        font-size: 24px
     }
     .tendThumbnails .texto p:last-child {
         padding-bottom: 0;
-        font-size: 16px;
+        font-size: 16px
     }
 }
 
 @media only screen and (max-width:500px) {
     .tendThumbnails .texto p:first-child {
-        font-size: 16px;
+        font-size: 16px
     }
     .tendThumbnails .texto p:last-child {
-        font-size: 13px;
+        font-size: 13px
     }
 }
