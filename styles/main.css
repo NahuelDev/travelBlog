@@ -276,6 +276,9 @@ div.row img {
     .header-text {
         width: 50%;
     }
+    .newEntry img {
+        height: 70vh;
+    }
     .header-text h1 {
         font-size: 25px;
     }
