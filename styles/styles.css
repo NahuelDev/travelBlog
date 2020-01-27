@@ -99,7 +99,8 @@ main {
 }
 
 .tendThumbnails>img {
-    height: 70%
+    height: 70%;
+    width: 90%;
 }
 
 .tendThumbnails .texto {
@@ -122,9 +123,10 @@ article.tend h5.font-weight-bold {
     color: #2a3037
 }
 
-article.tend {
+
+/*article.tend {
     padding: 0
-}
+}*/
 
 .nuevo .new {
     background: #fa6980;
@@ -217,7 +219,7 @@ div.row img {
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
     .header-text {
         width: 65%
     }
