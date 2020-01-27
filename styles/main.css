@@ -1,5 +1,4 @@
 html {
-    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -7,84 +6,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-div.crsl img {
-    width: 100vw;
-    height: 70vh;
-}
 
-.crsl .carousel-indicators {
-    justify-content: flex-start;
-    align-self: flex-end;
-    margin: 0;
-}
+/* header nav style*/
 
 .bg-light {
     box-shadow: 0px 3px 6px #00000029;
 }
-
-
-/*
-.carousel-indicators .active {
-    background-color: #2980b9;
-}
-
-.carousel-inner img {
-    width: 100%;
-    max-height: 460px
-}
-
-.carousel-control {
-    width: 0;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    background-image: none;
-    background-repeat: no-repeat;
-    text-shadow: none;
-}
-
-.carousel-control.left span {
-    padding: 15px;
-}
-
-.carousel-control.right span {
-    padding: 15px;
-}
-
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
-    position: absolute;
-    top: 45%;
-    z-index: 5;
-    display: inline-block;
-}
-
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .icon-prev {
-    left: 0;
-}
-
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-next {
-    right: 0;
-}
-
-.carousel-control.left span,
-.carousel-control.right span {
-    background-color: #000;
-}
-
-.carousel-control.left span:hover,
-.carousel-control.right span:hover {
-    opacity: .7;
-    filter: alpha(opacity=70);
-}
-*/
 
 
 /* Carousel Header Styles */
@@ -112,6 +39,17 @@ div.crsl img {
 
 .header-text hr {
     border: 1px solid #fff;
+}
+
+div.crsl img {
+    width: 100vw;
+    height: 70vh;
+}
+
+.crsl .carousel-indicators {
+    justify-content: flex-start;
+    align-self: flex-end;
+    margin: 0;
 }
 
 .articleNext {
@@ -152,6 +90,9 @@ div.crsl img {
 .articleNext p:last-child {
     font-weight: lighter;
 }
+
+
+/*main styles*/
 
 main {
     background-image: linear-gradient( #ebebeb, #ebebeb 60%, #fff 60%);
@@ -272,6 +213,9 @@ div.row img {
     padding-left: 1.5rem;
 }
 
+
+/* mediaqueries */
+
 @media only screen and (max-width:991px) {
     .header-text {
         width: 50%;
@@ -287,6 +231,9 @@ div.row img {
     }
     .header-text h1::before {
         background-size: 15px;
+    }
+    .bigBlogEntries {
+        padding: 0;
     }
 }
 

@@ -3,13 +3,11 @@ $(function() {
     size();
 });
 
-
-
 $(window).on('resize', function() {
     size();
 });
 
-
+/*add and remove class for responsive design depending the width*/
 function size() {
     if ($(window).width() <= 992) {
         $(".articleNext,.blog .info p, .bitBlogEntries, .header-text p").addClass("d-none d-lg-block");
@@ -37,6 +35,8 @@ function size() {
         $(".tend>.row>.nuevo").addClass("col-3").removeClass("col-12");
     }
 }
+
+/*change the active in the navbar depending the click*/
 
 $(document).ready(function() {
     $('.navbar-nav .nav-item').click(function() {
